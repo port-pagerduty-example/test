@@ -26,4 +26,5 @@ jobs:
           extraDetails: ${{ fromJson(inputs.port_payload).payload.properties.extra_details }}
           urgency: ${{ fromJson(inputs.port_payload).payload.properties.urgency }}
           service: ${{ fromJson(inputs.port_payload).context.entity }}
+          actorEmail: $${{ fromJson(inputs.port_payload).payload.properties.from }}
           blueprintIdentifier: 'pagerdutyIncident'

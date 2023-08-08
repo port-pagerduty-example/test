@@ -13,7 +13,7 @@ on:
       PORT_CLIENT_SECRET:
         required: true
 jobs: 
-  scaffold:
+  trigger:
     runs-on: ubuntu-latest
     steps:
       - uses: port-labs/cookiecutter-gha@v1
